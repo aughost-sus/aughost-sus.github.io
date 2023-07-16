@@ -254,39 +254,38 @@
   width: 100%;
 }
 
-#init-form label {
+#init-formz label {
   /* display: block; */
-  margin: 0 0 1rem;
+  font-size: 16px;
+  margin-right: 5px;
   color: #191924;
   text-transform: uppercase;
 }
 
-#init-form input {
+#init-formz input {
   outline: none;
   /* display: block; */
   background: #f4f4f4;
-  width: 100%;
   border: 0;
+  height: 35px;
   border-radius: 4px;
-  padding: 1.2rem 2rem;
-  margin-bottom: 10px;
+  padding: 5px 5px 5px 5px;
+  margin-right: 10px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
-#init-form button {
+#init-formz button {
   outline: none;
   background: #ffffff;
-  width: 100%;
   border: 0;
   border-radius: 4px;
-  padding: 1.2rem 2rem;
+  padding: 0.8rem 2rem;
   color: #191924;
   text-transform: uppercase;
   cursor: pointer;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  margin-bottom: 2rem;
 }
 
 #init-form button:hover {
@@ -806,13 +805,14 @@ h4 {
 .planner-content {
   width: 100%;
   height: 100%;
-  padding: 1rem;
   overflow-y: scroll;
 }
 
 .logo {
   color: #191924;
   font-size: 2.4rem;
+  margin-left: auto;
+  margin-right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -843,15 +843,15 @@ h4 {
 }
 
 header {
-  background: #eeaeca;
-  background: linear-gradient(70deg, #eeaeca 0%, #94bbe9 100%);
   width: 100%;
   height: 60px;
-  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  /* -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
@@ -860,7 +860,20 @@ header {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+          align-items: center; */
+}
+
+.header-box {
+  box-shadow: 3px 3px 5px 6px #ccc;
+  background: #ADD8E6;
+  /* background: linear-gradient(70deg, #eeaeca 0%, #94bbe9 100%); */
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .planner-box {
@@ -1046,20 +1059,25 @@ html {
 }
 
 body, html {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 .main-container {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  /* -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
@@ -1068,17 +1086,26 @@ body, html {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+          align-items: center; */
 }
 
-.planner-container, .place-container {
-  height: 100vh;
-  width: 45vw;
-  min-width: 400px;
+.planner-container  {
+  height:90%;
+  width: 30%;
+  margin-right: 15px;
 }
 
+.place-container {
+  margin-right: 20px;
+  height:90%;
+  width: 30%;
+  border-style: solid;
+  border-radius: 7px;
+  border-color: #ADD8E6;
+  
+}
 .planner-container {
-  padding: 1.5rem .75rem 1.5rem 1.5rem;
+  margin-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1092,6 +1119,12 @@ body, html {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+          border-style: solid;
+          border-color: #ADD8E6;
+          border-radius: 7px;
+          padding: 1.5rem 1.5rem 1.5rem .75rem;
+          -webkit-box-shadow: 8px 0 10px -6px rgba(0, 0, 0, 0.3);
+                  box-shadow: 8px 0 10px -6px rgba(0, 0, 0, 0.3);
 }
 
 .place-container {
@@ -1101,14 +1134,22 @@ body, html {
 }
 
 #map {
-  width: 46vw;
-  height: 100vh;
+  width: 30%;
+  height: 100%;
   background-color: #ffffff;
+  border-style: solid;
+          border-color: #ADD8E6;
+          border-radius: 7px;
+  padding: 1.5rem 1.5rem 1.5rem .75rem;
+  -webkit-box-shadow: 8px 0 10px -6px rgba(0, 0, 0, 0.3);
+          box-shadow: 8px 0 10px -6px rgba(0, 0, 0, 0.3);
 }
 
 p {
   margin: 0;
 }
+
+
 
 /* .button-custom {
   border-style: solid;

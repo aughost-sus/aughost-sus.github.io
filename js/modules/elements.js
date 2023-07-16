@@ -15,4 +15,10 @@ export const elements = {
 
   backBtn: document.querySelector(".back"),
   saveBtn: document.querySelector(".heart"),
+
+  map: document.querySelector("#map"),
+  placeContainer: document.querySelector(".place-container"),
+  placeOverview: document.querySelector(".place-overview"),
+  placeNum: document.querySelector("#place-num"),
+  placeList: document.querySelector(".place-list"),
 };

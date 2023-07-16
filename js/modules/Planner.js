@@ -57,7 +57,7 @@ const showDailyPlanners = (data) => {
     plannerBox.appendChild(plannerList);
     elements.plannerContent.appendChild(plannerBox);
   })
-  elements.plannerContent.innerHTML += `<div class="planner-actions"><a class="save" title="Save"><i class="material-icons">save</i></a></div>`
+  // elements.plannerContent.innerHTML += `<div class="planner-actions"><a class="save" title="Save"><i class="material-icons">save</i></a></div>`
 }
 
 export const addPlaceToPlanner = () => {

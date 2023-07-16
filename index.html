@@ -19,62 +19,37 @@
    
   </section>
   <header>
+    <div class="header-box">
+    <div style="width: 700px; display: flex;">
+      <form id="init-formz" style="display: flex; justify-content: center; align-items: center; margin-left: 15px;">
+        <!-- <div class="input-city-containerz">
+          <label for="input-city">City: </label>
+          <input type="text" name="input-city" id="input-city">
+        </div> -->
+      <div class="input-date-container">
+        <label for="start-date">From: </label>
+        <input type="date" name="start-date" id="start-date"
+         required>
+        <label for="end-date">To: </label>
+        <input type="date" name="end-date" id="end-date"
+         required>
+      </div>
+      <button id="search-submit">Start Exploring</button>
+      <!-- <div><a class='show-itineraries'>Check out existing itineraries</a></div> -->
+    </form>
+  </div>
     <div class="logo">
-      <i class="material-icons">loyalty</i>
+      <img src="./public/TripToBaguio.png" style="width: 50px;"/>
+      <!-- <i class="material-icons">loyalty</i> -->
       <span>Trip to Baguio</span>
     </div>
-    <form id="init-formz">
-      <!-- <div class="input-city-containerz">
-        <label for="input-city">City: </label>
-        <input type="text" name="input-city" id="input-city">
-      </div> -->
-    <div class="input-date-container">
-      <label for="start-date">From: </label>
-      <input type="date" name="start-date" id="start-date"
-       required>
-      <label for="end-date">To: </label>
-      <input type="date" name="end-date" id="end-date"
-       required>
-    </div>
-    <button id="search-submit">Start Exploring</button>
-    <!-- <div><a class='show-itineraries'>Check out existing itineraries</a></div> -->
-  </form>
+  </div> 
     <!-- <button class="btn btn-pink show-itineraries">Existing Itineraries</button> -->
   </header>
   <main class="main-container">
     <section class="planner-container">
      
       <div class="planner-content">
-        <div class="modal-content">
-          <div class="init-content-container" style="display: none;">
-            <div class="intro-language">
-              <h1>Start your planner by inputting the dates of your trip</h1>
-              <!-- <p>Explore popular places on the map for sightseeing, food, drinks and more</p>
-              <p>Daily planner with weather forecast</p>
-              <p>Drag and drop places in your planner for map routing</p> -->
-            </div>
-            <form id="init-form">
-                <div class="input-city-container">
-                  <label for="input-city">City: </label>
-                  <input type="text" name="input-city" id="input-city">
-                </div>
-              <div class="input-date-container">
-                <label for="start-date">From: </label>
-                <input type="date" name="start-date" id="start-date"
-                 required>
-                <label for="end-date">To: </label>
-                <input type="date" name="end-date" id="end-date"
-                 required>
-              </div>
-              <button id="search-submit">Start Exploring</button>
-              <!-- <div><a class='show-itineraries'>Check out existing itineraries</a></div> -->
-            </form>
-          </div>
-          <div class="itinerary-container">
-            <!-- <ul class="itinerary-list"></ul> -->
-            <!-- <a id="itinerary-back">Back</a> -->
-          </div>
-        </div>
         <div class="planner-box bucket" style="margin-top: 10px;">
           <div class="title"><p>Added Locations</p></div>
           <div class="planner-list"></div>
@@ -106,7 +81,7 @@
       <!-- </div> -->
     </section>
 
-    <section id="map"></section>
+    <div id="map" style="height: 80%;"></div>
   </main>
 </body>
 </html>
