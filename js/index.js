@@ -1,7 +1,6 @@
 import { elements } from "./modules/elements.js";
-import * as map from "./modules/map.js";
-import * as planner from "./modules/planner.js";
-import TripAdapter from "./modules/TripAdapter.js";
+import * as map from "./modules/Map.js";
+import * as planner from "./modules/Planner.js";
 
 export const PLACE_TYPES = {
   see: "tourist_attraction",
