@@ -3,7 +3,7 @@ export const elements = {
   cityInput: document.querySelector("#input-city"),
   startDateInput: document.querySelector("#start-date"),
   endDateInput: document.querySelector("#end-date"),
-  initForm: document.querySelector("#init-form"),
+  initForm: document.querySelector("#init-formz"),
   searchSubmit: document.querySelector("#search-submit"),
   initContentContainer: document.querySelector(".init-content-container"),
   itineraryContainer: document.querySelector(".itinerary-container"),
