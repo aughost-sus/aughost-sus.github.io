@@ -17,7 +17,6 @@ const state = {
   selectedTypes: [],
 };
 
-// const tripAdapter = new TripAdapter();
 
 /*
  ****** Global Controller *******
@@ -27,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
   showItem(elements.initModal);
   hideItem(elements.itineraryContainer);
   showItem(elements.initContentContainer);
-  // tripAdapter.fetchTrips();
 });
 
 document.addEventListener("click", (e) => {
@@ -55,10 +53,6 @@ searchBox.addListener("places_changed", () => {
   state.mapCenter = city.geometry.location;
 });
 
-/*
- ****** Init Modal Controller *******
- */
-
 elements.initModal.addEventListener("click", (e) => {
   if (e.target.id === "itinerary-back") {
     showItem(elements.initContentContainer);
@@ -78,11 +72,9 @@ const controlInit = (e) => {
     planner.getDates();
     map.initMap({"lat": 16.4023332, "lng" : 120.5960071 });
 
-    // set selected types to all available types - google map api only supports place search one type at a time
     state.selectedTypes = Object.keys(PLACE_TYPES);
 
     loadMapMarkersAndPlaces();
-    // call weather forecast from API for destination and render weather info in daily planners
     planner.getWeather(16.4023332, 120.5960071);
 
     elements.initForm.reset();
