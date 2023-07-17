@@ -398,7 +398,8 @@
       grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
   grid-gap: .5rem;
   padding-bottom: 1rem;
-  border-bottom: 2px dotted #616161;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #616161;
 }
 
 .filter-buttons a {
@@ -444,12 +445,13 @@
   padding: 5px 10px 5px 10px;
   border-radius: 7px;
   margin-right: .5rem;
-  color: #FF0266;
+  /* background: #ADD8E6; */
+  border-color: #ADD8E6;;
 }
 
 #apply-filter:hover, #apply-filter:active {
-  border-color: #FF0266;
-  background-color: #FF0266;
+  border-color: #ADD8E6;;
+  background-color: #ADD8E6;;
   transition: .3s ease;
   color: white;
 }
@@ -925,7 +927,7 @@ header {
 }
 
 .title.clicked {
-  background-color: #FF0266;
+  background: #ADD8E6;
 }
 
 .weather {

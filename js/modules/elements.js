@@ -5,8 +5,10 @@ export const elements = {
   endDateInput: document.querySelector("#end-date"),
   initForm: document.querySelector("#init-formz"),
   searchSubmit: document.querySelector("#search-submit"),
+  searchSubmitz: document.querySelector("#search-submitz"),
   initContentContainer: document.querySelector(".init-content-container"),
   itineraryContainer: document.querySelector(".itinerary-container"),
+  inputInput: document.querySelector("#input-input"),
 
   plannerContent: document.querySelector(".planner-content"),
   plannerBoxTitles: document.querySelectorAll(".title"),
